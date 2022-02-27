@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Merienda", sans-serif;
+}
+
+.body h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #168862;
+    text-shadow: 0 5px 50px rgb(44, 42, 42);
+    margin: 50px 0;
+}
+
+.search-form {
+    width: 800px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afa8a8;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    margin-top: 18px;
+    box-shadow: 25px 40px 80px #868282;
+    position: relative;
+}
+.search-form input {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 8px;
+    height: 35px;
+    border-bottom: 2px solid #ddd;
+}
+.search-form input[type="text"] {
+    color: #555;
+    padding: 0 10px;
+    width: 60%;
+    font-family: "Merienda", sans-serif;
+}
+.search-form input[type="submit"] {
+    width: 20%;
+    text-transform: uppercase;
+    background-color: #168862;
+    color: #fff;
+    font-family: "Merienda", sans-serif;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+.search-form input[type="submit"]:hover {
+    color: #333;
+    background-color: #ddd;
+}
+.alert {
+    position: absolute;
+    top: -40px;
+    background-color: rgb(233, 72, 72);
+    width: 100%;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.alert h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.items-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.recipes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.components {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    position: relative;
+    background-color: #afa8a8;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 15px 46px 80px #868282;
+}
+.components h2 {
+    background-color: rgba(139, 138, 138, 0.5);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 8px 8px #555;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+}
+.components img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+.components button {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #168862;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.resipeDetales {
+    background-color: #f0f0f0;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.resipeDetales li {
+    margin: 5px 0;
+    margin-left: 13px;
+}
+.ingredient-text {
+    color: rgb(116, 115, 115);
+    font-size: 15px;
+}
