@@ -17,9 +17,7 @@ function Items({ recipe }) {
         {ingredients.map((ingredients, idx1) => (
           <React.Fragment key={idx1}>
             <li className="ingredient-text">{ingredients.text}</li>
-            <li className="ingredient-weight">
-              {ingredients.weight}
-            </li>
+            {/* <li className="ingredient-weight">{ingredients.weight}</li> */}
           </React.Fragment>
         ))}
       </ul>
