@@ -30,7 +30,7 @@ function App() {
           setQuery("");
           setAlert("");
           if(!data.hits.length) {
-            setAlert("ni ma");
+            setAlert("No such food...");
           }
         } else {
           setAlert("Please fill the form");
