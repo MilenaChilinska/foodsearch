@@ -20,6 +20,11 @@
     text-shadow: 0 5px 50px rgb(44, 42, 42);
     margin: 50px 0;
 }
+@media (max-width: 700px) {
+    .body h1 {
+        text-align: center;
+    }
+}
 
 .search-form {
     width: 800px;
@@ -34,6 +39,17 @@
     box-shadow: 25px 40px 80px #868282;
     position: relative;
 }
+@media (max-width: 700px) {
+    .search-form {
+        width: 300px;
+        height: 120px;
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 1025px) {
+    .search-form {
+        width: 700px;
+    }
+}
 .search-form input {
     font-size: 18px;
     border: none;
@@ -43,11 +59,24 @@
     height: 35px;
     border-bottom: 2px solid #ddd;
 }
+@media (max-width: 700px) {
+    .search-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .search-form input[type="text"] {
     color: #555;
     padding: 0 10px;
     width: 60%;
     font-family: "Merienda", sans-serif;
+}
+@media (max-width: 700px) {
+    .search-form input[type="text"] {
+        width: 80%;
+        margin-bottom: 12px;
+        margin-top: 5px;
+    }
 }
 .search-form input[type="submit"] {
     width: 20%;
@@ -57,6 +86,11 @@
     font-family: "Merienda", sans-serif;
     cursor: pointer;
     transition: background-color .3s, color .3s;
+}
+@media (max-width: 700px) {
+    .search-form input[type="submit"] {
+        width: 60%;
+    }
 }
 .search-form input[type="submit"]:hover {
     color: #333;
@@ -101,6 +135,11 @@
     padding: 40px;
     border-radius: 8px;
     box-shadow: 15px 46px 80px #868282;
+}
+@media (max-width: 700px) {
+    .components {
+        width: 350px;
+    }
 }
 .components h2 {
     background-color: rgba(139, 138, 138, 0.5);
